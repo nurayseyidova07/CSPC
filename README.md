@@ -1,4 +1,6 @@
-# CSPC - Computer Science for Physics and Chemistry
+# CSPC - Computer Science for Ph
+
+Pysics and Chemistry
 
 My coursework repository. Each practical is under PW<n>/Lab <X>/.
 
