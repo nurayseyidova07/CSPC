@@ -37,3 +37,9 @@ conda activate cspc
 - The environment was recreated successfully from environment.yml.
 - All 3 tests passed with no changes to the code.
 - Result: reproducible on the test environment.
+
+## Nuray's Lab A Verification
+
+I activated the Conda environment and verified that all three tests pass.
+I also ran the Python and NumPy speed comparison.
+
