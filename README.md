@@ -62,19 +62,20 @@ and run:
 
     snakemake --cores 1 figure.png
 
-## PW1 — Lab B
+## PW2 — Lab A
 
-The observed data show an exponential decrease and closely follow
-the analytical model N(t) = N0 * exp(-0.3 * t).
-The observed points have small fluctuations, while the analytical
-curve is smooth.
+Mean acceleration: -8.58 m/s².
+Acceleration standard deviation: 28.72 m/s².
 
-The Snakefile uses decay_observed.csv and plot.py as inputs
-and generates figure.png by running python plot.py.
-It rebuilds the figure when an input changes or the output is missing.
-If everything is up to date, Snakemake reports "Nothing to be done".
+The mean is approximately -9.81 m/s², with a difference of
+1.23 m/s². Differentiating the noisy position data twice
+amplifies the noise, causing large acceleration fluctuations.
 
-To run the workflow, activate the cspc environment, open PW1/Lab B,
-and run:
+Integrating acceleration twice with the initial velocity and
+position recovers the original position closely. The maximum
+position difference is 0.785 m, less than 1 metre.
 
-    snakemake --cores 1 figure.png
+The three-panel plot is saved in PW2/Lab A/motion.png.
+
+To run, activate the cspc environment, open PW2/Lab A,
+and run: python analysis.py
